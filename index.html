@@ -57,10 +57,10 @@
 			<img src="photo.jpg" alt="bhaskar" width="300" height="300">
 			<h2>BHASKAR</h2>
 			<ul>
-				<li><a href="https://github.com/bhaskar-web"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.instagram.com/bhaskar_bhatta_/"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://linkedin.com/in/bhaskar-jyoti-bhattacharya-0a820817b"><i class="fab fa-linkedin"></i></a></li>
-				<li><a href="https://www.facebook.com/bhaskar.bhattacharya.961"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://github.com/bhaskar-web" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/bhaskar_bhatta_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://linkedin.com/in/bhaskar-jyoti-bhattacharya-0a820817b" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="https://www.facebook.com/bhaskar.bhattacharya.961" target="_blank"><i class="fab fa-facebook"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -88,7 +88,7 @@
 	<div class="w3-card-4 w3-hover-shadow w3-blue">
   <img src="images.png" alt="C++" > <br><br>
   <div class="w3-container w3-center ">
-  	<button class="w3-button w3-deep-purple w3-round-xlarge w3-hover-black">Why i prefer c++ in competitive programming</button>
+  	<button class="w3-button w3-deep-purple w3-round-xlarge w3-hover-black" onclick="document.getElementById('id01').style.display='block'">Why i prefer c++ in competitive programming</button>
   </div>
 </div> 	
 	</div><br><br><br><br>
@@ -96,7 +96,7 @@
 	<div class="w3-card-4 w3-hover-shadow w3-blue">
   <img src="skills.png" alt="skills" style="width: 80%"><br><br>
   <div class="w3-container w3-center ">
-  	<button class="w3-button w3-deep-purple w3-round-xlarge w3-hover-black">List of skills that i have developed till now.</button>
+  	<button class="w3-button w3-deep-purple w3-round-xlarge w3-hover-black" onclick="document.getElementById('id02').style.display='block'">List of skills that i have developed till now.</button>
   </div>
 </div> 	
 	</div>
@@ -105,12 +105,43 @@
 <div class="w3-container w3-pale-red">
 	<div class="w3-xxxlarge">
 		<center>
-			<a href="https://github.com/bhaskar-web"><i class="fab fa-github"></i></a>
-			<a href="https://www.instagram.com/bhaskar_bhatta_/"><i class="fab fa-instagram"></i></a>
-			<a href="https://linkedin.com/in/bhaskar-jyoti-bhattacharya-0a820817b"><i class="fab fa-linkedin"></i></a>
-			<a href="https://www.facebook.com/bhaskar.bhattacharya.961"><i class="fab fa-facebook"></i></a>
+			<a href="https://github.com/bhaskar-web" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/bhaskar_bhatta_/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://linkedin.com/in/bhaskar-jyoti-bhattacharya-0a820817b" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.facebook.com/bhaskar.bhattacharya.961" target="_blank"><i class="fab fa-facebook"></i></a>
 		</center>
 	</div>
+</div>
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>C++ for competitive programming</h2>
+      </header>
+      <div class="w3-container">
+         <p>I prefer C++ because of its robust STL. Many usefull functionalities are available here.And i have been using c++ for more than 2 years.I think it's a matter of personal choice.In compititive programming the algorithm matters not the language used.Many prefer python over C++ because the programs can be written within a few lines. Both c++ and python have it's own advantage and disadvantage.I recommend you all to stick to one language and utilize all its features in competitive programming. </p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Thanks for visiting here.Happy coding.</p>
+      </footer>
+    </div>
+  </div>
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>SKILLS THAT I HAVE DEVELOPED</h2>
+      </header>
+      <div class="w3-container">
+         <p>Not interested in telling you.</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Thanks for visiting here.Happy coding.</p>
+      </footer>
+    </div>
+  </div>
 </div>
 <script>
 var myIndex = 0;
@@ -135,6 +166,15 @@ function myFunction() {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<script>
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 </script>
